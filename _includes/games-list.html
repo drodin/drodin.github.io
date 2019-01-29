@@ -1,0 +1,30 @@
+<h3 class="index-title">Games</h3>
+<div class="games row">
+  {% assign games = site.games | sort: 'position' %}
+
+  {% for game in games %}
+    {% assign name = game.id | replace:"/","" %}
+    <div class="col-lg-4 col-sm-6">
+      <div class="game clearfix">
+        <div class="clearfix">
+          <a href="{{ game.url }}">
+            <div class="game-icon">{% include icon.html name=name %}</div>
+            <div class="game-title">{{ game.title }}</div>
+          </a>
+          <div class="game-excerpt">{{ game.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+        </div>
+        <div class="pull-right clearfix">
+          {% if game.market-android %}
+            <a href="https://play.google.com/store/apps/details?id={{ game.market-android[0] }}"><img height="25px" src="/assets/images/android_logo.png"></a>
+          {% endif %}
+          {% if game.market-blackberry or game.download-blackberry %}
+            <a href="https://appworld.blackberry.com/webstore/content/{{ game.market-blackberry[0] }}"><img height="25px" src="/assets/images/blackberry_logo.png"></a>
+          {% endif %}
+          {% if game.source %}
+            <a href="{{ game.source[0] }}"><img height="24px" src="/assets/images/GitHub-Mark-32px.png"></a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

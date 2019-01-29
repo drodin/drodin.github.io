@@ -1,0 +1,24 @@
+{% assign images = "" | split: "," %}
+{% assign image_files = site.static_files | where: "screen", true %}
+
+{% for image in image_files %}
+  {% if image.path contains include.name %}
+    {% unless image.path contains "_." %}
+      {% assign images = images | push: image %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% if images.size > 0 %}
+  {% assign col = 12 | divided_by: images.size) %}
+
+  <div class="gallery clearfix">
+    {% for image in images %}
+      <div class="col-sm-{{ col }}">
+        <a data-fancybox="gallery" href="{{ image.path }}">
+          <img class="thumbnail img-responsive" src="{{ image.path | replace:image.extname,'' | append: '_' | append: image.extname }}" alt="">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -1,0 +1,6 @@
+{% assign icon_files = site.static_files | where: "icon", true %}
+{% for icon in icon_files %}
+  {% if icon.path contains include.name %}
+    <img src="{{ icon.path }}">
+  {% endif %}
+{% endfor %}
