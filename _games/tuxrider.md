@@ -17,3 +17,9 @@ Practice, improve your skills and participate in events - beat the clock!
 Lots of different levels with various terrains and tricky passes.
 
 You can control Tux with accelerometer and touch screen.
+
+Privacy Policy:
+===
+
+We don't collect any personal data from our apps.
+If you have any questions please don't hesitate to contact us: tuxrider@drodin.com
