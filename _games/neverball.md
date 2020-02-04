@@ -1,11 +1,11 @@
 ---
 title: Neverball
-excerpt: BlackBerry OS 10 and PlayBook Port of popular marble rolling game.
+excerpt: Android and BlackBerry Port of popular marble rolling game.
 
 position: 5
 
-market-blackberry: [ 64914, 1.6.0.3 ] 
-download-blackberry: [ "", Coming Soon! ]
+market-android: [ com.drodin.neverball.ball, 1.6.0-1 ]
+download-android: [ "https://github.com/drodin/neverball/releases/download/1.6.0-1/ball-1.6.0-1.apk", 1.6.0-1 ]
 source: [ "https://github.com/drodin/neverball", GNU GPL v2 ]
 ---
 
