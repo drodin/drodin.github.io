@@ -1,0 +1,41 @@
+plugins:
+  - jekyll-redirect-from
+
+collections:
+  games:
+    output: true
+    permalink: /:path/
+  apps:
+    output: true
+    permalink: /:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: games
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: apps
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      excerpt_separator: <!--more-->
+  - scope:
+      path: "assets/screens"
+    values:
+      screen: true
+  - scope:
+      path: "assets/icons"
+    values:
+      icon: true

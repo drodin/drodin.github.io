@@ -1,0 +1,24 @@
+<h3 class="index-title">Posts</h3>
+<div class="posts">
+  {% assign posts = site.posts  %}
+  {% for post in posts %}
+    <div class="post">
+      {% if post.excerpt != post.content %}
+        <a href="{{ post.url }}">
+      {% endif %}
+          <h4>{{ post.title }}</h4>
+      {% if post.excerpt != post.content %}
+        </a>
+      {% endif %}
+      <h6 class="post-date">
+        <span class="glyphicon glyphicon-calendar"></span>
+        {{ post.date | date_to_long_string }}
+      </h6>
+      {% if include.show_full %}
+        {{ post.content }}
+      {% else %}
+        {{ post.excerpt }}
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

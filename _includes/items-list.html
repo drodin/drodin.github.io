@@ -1,0 +1,34 @@
+<h3 class="index-title">{{ include.type | capitalize }}</h3>
+
+<div class="items row">
+  {% assign items = site[include.type] | sort: 'position' | where_exp: 'item', 'item.position > 0' %}
+
+  {% for item in items %}
+    {% assign name = item.id | replace:"/","" %}
+    <div class="col-lg-4 col-sm-6">
+      <div class="item clearfix">
+        <div class="clearfix">
+          <a href="{{ item.url }}">
+            <div class="item-icon">{% include icon.html name=name %}</div>
+            <div class="item-title">{{ item.title }}</div>
+          </a>
+          <div class="item-excerpt">{{ item.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+        </div>
+        <div class="pull-right clearfix">
+          {% if item.market-android %}
+            <a href="https://play.google.com/store/apps/details?id={{ item.market-android[0] }}"><img src="/assets/images/googleplay_logo.png"></a>
+          {% endif %}
+          {% if item.market-appstore %}
+            <a href="https://apps.apple.com/app/id{{ item.market-appstore[0] }}"><img src="/assets/images/appstore_logo.png"></a>
+          {% endif %}
+          {% if item.market-blackberry or item.download-blackberry %}
+            <a href="https://appworld.blackberry.com/webstore/content/{{ item.market-blackberry[0] }}"><img src="/assets/images/blackberryworld_logo.png"></a>
+          {% endif %}
+          {% if item.source %}
+            <a href="{{ item.source[0] }}"><img src="/assets/images/GitHub-Mark-32px.png"></a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
