@@ -15,7 +15,7 @@ source: [ "https://github.com/drodin/extremetuxracer", GNU GPL v2 ]
 
 Cool 3D game. Ride penguin Tux down the snow slope.
 
-Get ready for a lot of fun and speed! The Linux mascot Tux is coming to Android and macOS!  
+Get ready for a lot of fun and speed! The Linux mascot Tux is coming to Android, macOS and iOS!  
 Help penguin Tux to ride down the snow slope, collect as much fishes as you can.  
 Practice, improve your skills and participate in events - beat the clock!  
 Lots of different levels with various terrains and tricky passes.
