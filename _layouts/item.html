@@ -13,51 +13,46 @@ layout: default
 </div>
 
 <div class="item-download row">
-  {% if page.market-android or page.market-appstore or page.market-blackberry %}
-    {% if page.market-android %}
+  {% if page.market-android or page.download-android %}
     <div class="col-sm-4 clearfix">
+    {% if page.market-android %}
       <a href="https://play.google.com/store/apps/details?id={{ page.market-android[0] }}">
         <img src="https://chart.apis.google.com/chart?cht=qr&amp;chld=|0&amp;chs=110x110&amp;chl=market://search?q=pname:{{ page.market-android[0] }}">
       </a>
-      <br />Install from<br />Android Market<br /><strong>Version {{ page.market-android[1] }}</strong>
-    </div>
+      <br />Android Market<br /><strong>Version {{ page.market-android[1] }}</strong>
     {% endif %}
+    {% if page.download-android %}
+      <br><a class="btn btn-md btn-primary" href="{{ page.download-android[0] }}">Android version {{ page.download-android[1] }}</a>
+    {% endif %}
+    </div>
+  {% endif %}
 
-    {% if page.market-appstore %}
+  {% if page.market-appstore or page.download-appstore %}
     <div class="col-sm-4 clearfix">
+    {% if page.market-appstore %}
       <a href="https://apps.apple.com/app/id{{ page.market-appstore[0] }}">
         <img src="https://chart.apis.google.com/chart?cht=qr&amp;chld=|0&amp;chs=110x110&amp;chl=https://apps.apple.com/app/id{{ page.market-appstore[0] }}">
       </a>
-      <br />Install from<br />App Store Market<br /><strong>Version {{ page.market-appstore[1] }}</strong>
-    </div>
+      <br />App Store<br /><strong>Version {{ page.market-appstore[1] }}</strong>
     {% endif %}
+    {% if page.download-appstore %}
+      <br><a class="btn btn-md btn-primary" href="{{ page.download-appstore[0] }}">macOS version {{ page.download-appstore[1] }}</a>
+    {% endif %}
+    </div>
+  {% endif %}
 
-    {% if page.market-blackberry %}
+  {% if page.market-blackberry or page.download-blackberry %}
     <div class="col-sm-4 clearfix">
+    {% if page.market-blackberry %}
       <a href="https://appworld.blackberry.com/webstore/content/{{ page.market-blackberry[0] }}">
         <img height="110px" style="padding:9px;" src="https://appworld.blackberry.com/webstore/servedimages/{{ page.market-blackberry[0] }}/?t=13">
       </a>
-      <br />Install from<br />BlackBerry World<br /><strong>Version {{ page.market-blackberry[1] }}</strong>
-    </div>
+      <br />BlackBerry World<br /><strong>Version {{ page.market-blackberry[1] }}</strong>
     {% endif %}
-  {% endif %}
-
-  {% if page.download-android or page.download-appstore or page.download-blackberry %}
-  <div class="col-sm-4 clearfix">
-    Direct Download:<br />
-
-    {% if page.download-android %}
-      <a class="btn btn-md btn-primary" href="{{ page.download-android[0] }}">Android version {{ page.download-android[1] }}</a><br />
-    {% endif %}
-
-    {% if page.download-appstore %}
-      <a class="btn btn-md btn-primary" href="{{ page.download-appstore[0] }}">macOS version {{ page.download-appstore[1] }}</a><br />
-    {% endif %}
-
     {% if page.download-blackberry %}
-      <a class="btn btn-md btn-primary" href="{{ page.download-blackberry[0] }}">BlackBerry version {{ page.download-blackberry[1] }}</a><br />
+      <br><a class="btn btn-md btn-primary" href="{{ page.download-blackberry[0] }}">BlackBerry version {{ page.download-blackberry[1] }}</a>
     {% endif %}
-  </div>
+    </div>
   {% endif %}
 </div>
 
