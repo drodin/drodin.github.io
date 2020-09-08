@@ -6,6 +6,8 @@ position: 3
 
 market-android: [ com.drodin.neverball.putt, 1.6.0-3 ]
 download-android: [ "https://github.com/drodin/neverball/releases/download/1.6.0-3/putt-1.6.0-3.apk", 1.6.0-3 ]
+market-appstore: [ 1528128417, 1.6.002 ]
+download-appstore: [ "https://github.com/drodin/neverball/releases/download/macos-1.6.002/neverputt-1.6.002.dmg", 1.6.002 ]
 market-blackberry: [ 67588, 1.6.0.5 ] 
 download-blackberry: [ "https://github.com/drodin/neverball/releases/download/blackberry-1.6.0.5/neverputt-1_6_0_5.bar", 1.6.0.5 ]
 source: [ "https://github.com/drodin/neverball", GNU GPL v2 ]
