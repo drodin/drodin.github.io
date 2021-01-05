@@ -13,6 +13,20 @@ layout: default
 </div>
 
 <div class="item-download row">
+  {% if page.download-oculus %}
+    <div class="col-sm-4 clearfix">
+    {% if page.market-oculus %}
+      <a href="https://sidequestvr.com/app/{{ page.market-oculus[0] }}">
+        <img src="https://chart.apis.google.com/chart?cht=qr&amp;chld=|0&amp;chs=110x110&amp;chl=https://sidequestvr.com/app/{{ page.market-oculus[0] }}">
+      </a>
+      <br />SideQuest<br /><strong>Version {{ page.market-oculus[1] }}</strong>
+    {% endif %}
+    {% if page.download-oculus %}
+      <br><a class="btn btn-md btn-primary" href="{{ page.download-oculus[0] }}">Oculus Quest version {{ page.download-oculus[1] }}</a>
+    {% endif %}
+    </div>
+  {% endif %}
+
   {% if page.market-android or page.download-android %}
     <div class="col-sm-4 clearfix">
     {% if page.market-android %}

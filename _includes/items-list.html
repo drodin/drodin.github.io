@@ -15,13 +15,16 @@
           <div class="item-excerpt">{{ item.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</div>
         </div>
         <div class="pull-right clearfix">
+          {% if item.market-oculus %}
+            <a href="https://sidequestvr.com/app/{{ item.market-oculus[0] }}"><br><img src="/assets/images/oculus_logo.png"></a>
+          {% endif %}
           {% if item.market-android %}
             <a href="https://play.google.com/store/apps/details?id={{ item.market-android[0] }}"><img src="/assets/images/googleplay_logo.png"></a>
           {% endif %}
           {% if item.market-appstore %}
             <a href="https://apps.apple.com/app/id{{ item.market-appstore[0] }}"><img src="/assets/images/appstore_logo.png"></a>
           {% endif %}
-          {% if item.market-blackberry or item.download-blackberry %}
+          {% if item.market-blackberry %}
             <a href="https://appworld.blackberry.com/webstore/content/{{ item.market-blackberry[0] }}"><img src="/assets/images/blackberryworld_logo.png"></a>
           {% endif %}
           {% if item.source %}
