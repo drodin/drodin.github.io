@@ -30,10 +30,3 @@ Thank you.**
 ===
 
 [GameKeys - Top Underrated Racing Games To Play](https://gameskeys.net/top-underrated-racing-games-to-play/)
-
-
-[Privacy Policy:](#privacy-policy)
-===
-
-We don't collect any personal data from our apps.
-If you have any questions please don't hesitate to contact us: extremetuxracer@drodin.com

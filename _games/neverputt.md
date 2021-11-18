@@ -18,9 +18,3 @@ A 3D Mini Golf game with lots of levels.
 Test your skills playing mini golf. This game provides variety of golf courses for players of any level.
 
 Gamepad as well as touchscreen can be used for controls.
-
-[Privacy Policy:](#privacy-policy)
-===
-
-We don't collect any personal data from our apps.
-If you have any questions please don't hesitate to contact us: neverputt@drodin.com

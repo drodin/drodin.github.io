@@ -21,9 +21,3 @@ Race against the clock to collect coins to earn extra balls.
 
 Control the ball with the accelerometer. Swipe from right to left over the bottom bezel to go to the previous menu, pause, exit game.
 Swipe down from the top bezel to switch camera mode. See game help for more information on rules, controls, modes and tricks.
-
-[Privacy Policy:](#privacy-policy)
-===
-
-We don't collect any personal data from our apps.
-If you have any questions please don't hesitate to contact us: neverball@drodin.com

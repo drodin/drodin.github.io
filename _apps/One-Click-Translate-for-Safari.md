@@ -13,9 +13,3 @@ source: [ "https://github.com/drodin/One-Click-Translate-for-Safari", MIT ]
 
 Safari extension to translate web pages in one click.  
 You can set your preferred translation engine and language in the main app.
-
-[Privacy Policy:](#privacy-policy)
-===
-
-We don't collect any personal data from our apps.  
-If you have any questions please don't hesitate to contact us: translate@drodin.com
