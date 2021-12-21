@@ -4,8 +4,8 @@ excerpt: A port of [Stratagus](http://stratagus.com) real-time strategy gaming e
 
 position: 4
 
-market-android: [ com.drodin.stratagus, 0.8.5 ] 
-download-android: [ "https://github.com/drodin/Stratagus/releases/download/v3.0.0-dev1/Stratagus-v3.0.0-dev1.apk", 3.0.0-dev1 ]
+market-android: [ com.drodin.stratagus, 3.0.0-dev1 ] 
+download-android: [ "https://github.com/drodin/Stratagus/releases/download/v3.0.0-dev2/Stratagus-v3.0.0-dev2.apk", 3.0.0-dev2 ]
 source: [ "https://github.com/drodin/Stratagus", GNU GPL v2 ]
 ---
 
@@ -22,7 +22,7 @@ You will need to provide 'game data files' to actually play anything, to create 
 Wargus (Warcraft II +expansion):
 --------------------------------
 
-* Download latest version of Stratagus apk [Stratagus-v3.0.0-dev1.apk](https://github.com/drodin/Stratagus/releases/download/v3.0.0-dev1/Stratagus-v3.0.0-dev1.apk)
+* Download latest version of Stratagus apk [Stratagus-v3.0.0-dev2.apk](https://github.com/drodin/Stratagus/releases/download/v3.0.0-dev2/Stratagus-v3.0.0-dev2.apk)
 * Download [Wargus-3.0.0-dev1.zip](https://github.com/drodin/wargus/releases/download/v3.0.0-dev1/Wargus-3.0.0-dev1.zip).
 * Extract and run `wargus.exe`
 * Select the disk or folder with Warcraft II CD.
