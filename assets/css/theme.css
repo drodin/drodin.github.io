@@ -69,7 +69,7 @@ body {
   font-size: 14px;
 }
 
-.item-header, .item-download {
+.item-header {
   margin-bottom: 10px;
 }
 
@@ -82,12 +82,35 @@ body {
   padding-right: 10px;
 }
 
-.item-download img {
+.market a {
+  color: #333;
+}
+
+.market-icon {
   float: left;
 }
 
-.item-download .btn {
-  margin-top: 5px;
+.market span {
+  float: left;
+  margin-left: 5px;
+}
+
+.download .btn {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.market div.clearfix, .download div.clearfix {
+  margin-bottom: 5px;
+}
+
+.market i, .download i {
+  font-size: 13px;
+}
+
+.market, .download {
+  float: left;
+  margin: 10px 0 10px 0;
 }
 
 .gallery {
