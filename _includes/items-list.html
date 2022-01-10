@@ -24,8 +24,8 @@
           {% if item.market-appstore %}
             <a href="https://apps.apple.com/app/id{{ item.market-appstore[0] }}"><img src="/assets/images/appstore_logo.png"></a>
           {% endif %}
-          {% if item.market-blackberry %}
-            <a href="https://appworld.blackberry.com/webstore/content/{{ item.market-blackberry[0] }}"><img src="/assets/images/blackberryworld_logo.png"></a>
+          {% if item.download-blackberry %}
+            <a href="{{ item.download-blackberry[0] }}"><img src="/assets/images/blackberryworld_logo.png"></a>
           {% endif %}
           {% if item.source %}
             <a href="{{ item.source[0] }}"><img src="/assets/images/GitHub-Mark-32px.png"></a>

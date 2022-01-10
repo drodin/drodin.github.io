@@ -55,17 +55,9 @@ layout: default
     </div>
   {% endif %}
 
-  {% if page.market-blackberry or page.download-blackberry %}
+  {% if page.download-blackberry %}
     <div class="col-sm-4 clearfix">
-    {% if page.market-blackberry %}
-      <a href="https://appworld.blackberry.com/webstore/content/{{ page.market-blackberry[0] }}">
-        <img height="110px" style="padding:9px;" src="https://appworld.blackberry.com/webstore/servedimages/{{ page.market-blackberry[0] }}/?t=13">
-      </a>
-      <br />BlackBerry World<br /><strong>Version {{ page.market-blackberry[1] }}</strong>
-    {% endif %}
-    {% if page.download-blackberry %}
-      <br><a class="btn btn-md btn-primary" href="{{ page.download-blackberry[0] }}">BlackBerry version {{ page.download-blackberry[1] }}</a>
-    {% endif %}
+      <a class="btn btn-md btn-primary" href="{{ page.download-blackberry[0] }}">BlackBerry version {{ page.download-blackberry[1] }}</a>
     </div>
   {% endif %}
 </div>

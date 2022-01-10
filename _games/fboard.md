@@ -4,7 +4,6 @@ excerpt: Flash FICS (Free Internet Chess Server) Client!
 
 position: 9
 
-market-blackberry: [ 46587, 0.4.1 ] 
 download-blackberry: [ "https://github.com/drodin/drodin.github.io/releases/download/files/FBoard-0.4.1.bar", 0.4.1 ]
 ---
 

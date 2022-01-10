@@ -8,7 +8,6 @@ market-android: [ com.drodin.extremetuxracer, 0.7.5-5 ]
 download-android: [ "https://github.com/drodin/extremetuxracer/releases/download/0.7.5-5/etr-0.7.5-5.apk", 0.7.5-5 ]
 market-appstore: [ 1522259097, 0.7.501 ]
 download-appstore: [ "https://github.com/drodin/extremetuxracer/releases/download/0.7.501/extremetuxracer-0.7.501.dmg", 0.7.501 ]
-market-blackberry: [ 61940, 0.6.0.9 ] 
 download-blackberry: [ "https://github.com/drodin/extremetuxracer/releases/download/0.6.0.10/extremetuxracer-0_6_0_9.bar", 0.6.0.9 ]
 source: [ "https://github.com/drodin/extremetuxracer", GNU GPL v2 ]
 ---

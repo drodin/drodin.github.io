@@ -4,7 +4,6 @@ excerpt: It's even better than Tetris...
 
 position: 8
 
-market-blackberry: [ 34655, 0.1.2 ] 
 download-blackberry: [ "https://github.com/drodin/drodin.github.io/releases/download/files/ElastikBlocks-0.1.2.bar", 0.1.2 ]
 ---
 
