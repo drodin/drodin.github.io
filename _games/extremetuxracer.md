@@ -4,8 +4,8 @@ excerpt: Android and macOS port of a Linux hit.
 
 position: 1
 
-market-android: [ com.drodin.extremetuxracer, 0.8.106 ]
-download-android: [ "https://github.com/drodin/extremetuxracer/releases/download/0.8.106/extremetuxracer-0.8.106.apk", 0.8.106 ]
+market-android: [ com.drodin.extremetuxracer, 0.8.107 ]
+download-android: [ "https://github.com/drodin/extremetuxracer/releases/download/0.8.107/extremetuxracer-0.8.107.apk", 0.8.107 ]
 market-appstore: [ 1522259097, 0.8.106 ]
 download-appstore: [ "https://github.com/drodin/extremetuxracer/releases/download/0.8.106/extremetuxracer-0.8.106.dmg", 0.8.106 ]
 download-blackberry: [ "https://github.com/drodin/extremetuxracer/releases/download/0.6.0.10/extremetuxracer-0_6_0_9.bar", 0.6.0.9 ]
