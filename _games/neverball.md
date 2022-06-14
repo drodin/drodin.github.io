@@ -6,7 +6,7 @@ position: 2
 
 market-android: [ com.drodin.neverball.ball, 1.6.0-1 ]
 download-android: [ "https://github.com/drodin/neverball/releases/download/1.6.0-1/ball-1.6.0-1.apk", 1.6.0-1 ]
-market-appstore: [ 1528128270, 1.6.002 ]
+market-appstore: [ 1528128270, 1.6.003 ]
 download-appstore: [ "https://github.com/drodin/neverball/releases/download/macos-1.6.002/neverball-1.6.002.dmg", 1.6.002 ]
 download-blackberry: [ "https://github.com/drodin/neverball/releases/download/blackberry-1.6.0.5/neverball-1_6_0_5.bar", 1.6.0.5 ]
 source: [ "https://github.com/drodin/neverball", GNU GPL v2 ]
